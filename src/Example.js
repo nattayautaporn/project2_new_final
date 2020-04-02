@@ -1101,7 +1101,7 @@ export default class SVGOverlayExample extends Component<{}> {
             return (
                   <>
                         {/* <div class="mapcss" > */}
-                        <div class="p-3 mb-2 bg-secondary text-white">
+                        <div class="Showtitle">
                         <h1 style ={mystyle}><b>Vector Field and Flood Flow Map</b></h1>
                         </div>
                         <br></br>
@@ -1287,14 +1287,14 @@ export default class SVGOverlayExample extends Component<{}> {
                                                                   onClick={async () => {
                                                                         if (this.state.mode === "1") {
                                                                               const res = await axios.get(
-                                                                                    "https://panmap.herokuapp.com/"
+                                                                                    "https://intense-garden-30073.herokuapp.com/"
                                                                               )
                                                                               await this.setState({
                                                                                     change: res.data
                                                                               })
                                                                         } else if (this.state.mode === "2") {
                                                                               const res = await axios.get(
-                                                                                    "https://panmap.herokuapp.com/screen2"
+                                                                                    "https://intense-garden-30073.herokuapp.com/screen2"
                                                                               )
                                                                               await this.setState({
                                                                                     change: res.data
@@ -1303,7 +1303,7 @@ export default class SVGOverlayExample extends Component<{}> {
                                                                         //-------------------------------------------------------
                                                                         if (this.state.mode === "3") {
                                                                               const res = await axios.get(
-                                                                                    "https://panmap.herokuapp.com/"
+                                                                                    "https://intense-garden-30073.herokuapp.com/screen3"
                                                                               )
                                                                               await this.setState({
                                                                                     change: res.data
@@ -1334,10 +1334,7 @@ export default class SVGOverlayExample extends Component<{}> {
                                                       <div class="margintotal">
                                                             {/* <b><br />ความเเรงของน้ำ: </b> <br /><br /> */}
                                                             {/* <input type="range" min={1} max={100} defaultValue={20} className="slider2" id="myRange2" /> */}
-                                                           
 
-                                                           
-                                                    
                                                             <Button variant="danger" onClick={() => this.setState({ speed: 1200 })}> 
                                                                   SLOW
                                                             </Button> &nbsp;   
@@ -1362,6 +1359,11 @@ export default class SVGOverlayExample extends Component<{}> {
                               </CardDeck>
 
                         </div>
+
+                        <div id="post-it">
+            <b>Search US states name:</b>
+                         PHUKET, ม.อ ภูเก็ต, เซ็นทรัล, ชารินๆ , สะพานหิน, Zerocel, Grocery, คิดถึงมาก ๆ เลย ...
+                         </div>
                         
 
                   </>

@@ -80,6 +80,23 @@
   .leaflet-canvas-layer {
     opacity: 0.55;
 }
+.Showtitle{
+  background-color: rgb(119, 132, 136);
+  height: 100px;
+  margin-top: -3em;
+}
+#post-it {
+  width: 10em;
+  height: 15em;
+  margin-left: 109em;
+  margin-top: -40em;
+  padding: 1em;
+  float: left;
+  background: #fbf5bf;
+  border: 1px solid #c6bb58;
+  box-shadow: 2px 2px 6px #999;
+  color: #666;
+}
 
 /* .mapcss{
   margin-top: 2.0em;
